@@ -16,6 +16,6 @@ a
 -**Mockup**  [**link to Mockup**!](http;//google.com)
 
 
--**GitHub MyProfile Page**  [**link to GitHub MyProfile Page**!](https://github.com/pasindusadishka/myProfile)
+-**GitHub MyProfile Page**  [**link to GitHub MyProfile Page**!]( https://pasindusadishka.github.io/MyProfile/)
 
 -**000webhost**  [**link to 000webhost**!](https://pasindusadishka.000webhostapp.com)
