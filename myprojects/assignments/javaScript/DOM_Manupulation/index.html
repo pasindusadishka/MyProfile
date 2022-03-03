@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manupulation</title>
+</head>
+<body>
+
+<h1>Institute of Software Engineering</h1> <!--Hello Java Script : Font-Size: 50px-->
+<h1 id="d">Institute of Software Engineering</h1>
+
+<h2 id="secondTitle">GDSE</h2> <!--IJSE-->
+
+<h3 class="h3Class">Panadura & Galle</h3> <!--Color RED-->
+
+<!--Background Color Red, Font COLOR , WHITE-->
+<p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos omnis vel. Accusamus assumenda
+    distinctio
+    dolorum eos et illo itaque iusto molestiae nobis nulla, porro possimus quidem saepe voluptates voluptatum!</p>
+<hr>
+
+<!--C001-->
+<input id="input" placeholder="Input Something" type="text">
+
+<button id="btn1">Test </button>
+<button id="btn2">search</button>
+<button id="btn3">Add</button>
+<hr>
+
+<ul>
+    <li>GDSE</li>
+    <li>CMJD</li>
+    <li>ABSD</li>
+</ul>
+
+<!--Set image-->
+<img id="im1" alt="" src="assests/pexels-jessica-nunes-4254970.jpg" width="300px">
+
+
+<script>
+    /*select by element id- selects a html collection*/
+    document.getElementsByTagName("h1")[0].innerText = "Hello Java Script";
+    document.getElementsByTagName("h1")[0].style.fontSize = "50px";
+
+    /*select by id - select only one element*/
+    document.getElementById("secondTitle").innerText = "IJSE";
+
+    /*select by class - select a html collection */
+    document.getElementsByClassName("h3Class")[0].style.color = 'red';
+
+
+    document.getElementById("para").style.backgroundColor = 'red';
+    document.getElementById("para").style.color = 'white';
+
+
+    /* Query Selector - select the first matching element of the dom*/
+    document.querySelector("input").value = "C001";
+
+
+    /* Query Selector Aall - select all matching elements of the dom- node list*/
+    document.querySelectorAll("h1")[1].style.color = 'green';
+
+
+    /*    select button */
+    document.getElementById("btn1").addEventListener("click", function () {
+        /*  alert("hello");*/
+        document.getElementsByTagName("h1")[1].remove();
+    });
+    document.getElementById("btn2").addEventListener("click", function () {
+        /*  alert("hello");*/
+        document.getElementById("im1").setAttribute("src",document.querySelector("input").value);
+    });
+
+
+    document.getElementById("btn3").addEventListener("click", function () {
+        /*  alert("hello");*/
+        document.querySelector('ul').innerHTML +=  "<li>"+document.getElementById("input").value+"</li>";
+    });
+
+
+
+
+</script>
+
+</body>
+</html>
