@@ -50,17 +50,18 @@
 /*main*/
 
 #homeMainSelection {
-    background-image : url("/assets/images/java.jpg");
+    background-image: url("/assets/images/backgroundPic.jpeg");
     height: 100vh;
     width: 98.9vw;
 }
 
 #homeMainSelection > section:first-child > img {
-    width: 30vw;
+    width: 28vw;
+    height: 389px;
     border-radius: 100%;
     position: absolute;
-    right: 100px;
-    top: 150px;
+    right: 150px;
+    top: 154px;
 }
 
 #homeMainSelection > aside > h1 {
@@ -544,9 +545,6 @@
     transform-origin: center;
     transform-style: preserve-3d;
     transform: rotateY(calc(var(--i) * 70deg)) translateZ(400px);
-    /*
-    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, rgba(9, 6, 6, 0.27));
-    */
 }
 
 .box > span > img {
@@ -627,7 +625,7 @@
     position: absolute;
     text-align: left;
     width: 200px;
-    top: 100px;
+    top: 113px;
     left: 6vw;
     font-size: 1.2em;
 }
