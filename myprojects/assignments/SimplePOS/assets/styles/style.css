@@ -6,11 +6,9 @@
 }
 
 .container{
-
-
-
-
-    position: absolute;
+    display: inline;
+    position: relative;
+    align-items: center;
 
 }
 #blur-area{
@@ -43,7 +41,7 @@ nav{
     padding: 20px 8%;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -74,10 +72,19 @@ nav ul li a{
 }
 .text-box{
     position: relative;
+    z-index: 2;
+    text-align: center;
+    align-items: center;
+    margin: 0 100px;
+    display: block;
+}
+.form{
+    position: relative;
     z-index: 1;
     text-align: center;
-    margin: 0 30px;
-
+    align-items: center;
+    margin-top: 100px;
+    display: grid;
 }
 
 .brandName{
@@ -95,8 +102,7 @@ nav ul li a{
     font-size: 18px;
     border-radius:30px ;
     margin-top: 100px;
-    margin-bottom: 50px;
-    display: flex;
+    display: block;
 
 }
 .myCard>i{
