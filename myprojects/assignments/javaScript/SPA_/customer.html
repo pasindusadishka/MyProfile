@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Form</title>
+    <link href="assets/styles/style.css" rel="stylesheet">
+    <link href="assets/fonts/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="has-bg-img ">
+    <img class="bg-img position-absolute " src="assets/images/images%20(9).jpeg" alt="..." style="width: 100% ;height: 98vh ">
+
+    <div id="blur-area"></div>
+
+    <section class="container">
+        <nav>
+            <img src="assets/images/Logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="index.html" >HOME</a> </li>
+                <li><a href="placeOrder.html" >ORDER</a> </li>
+                <li><a href="customer.html" >Manage Customer</a> </li>
+                <li><a href="item.html" >Manage Item</a> </li>
+
+            </ul>
+        </nav>
+    </section>
+
+
+
+</div>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="db/DB.js"></script>
+<script src="module/customerDTO.js"></script>
+<script src="controller/customerController.js"></script>
+<script>
+
+    // Add Customer
+
+    // Select Button
+    $("#btnSaveOrUpdate").click(function () {
+
+        // remove all the row click events added before
+        $("#customerTable>tr").off();
+
+
+        //gather customer information
+
+
+
+        //bind the events to the table rows after the row was added
+        $("#customerTable>tr").click(function () {
+            // this//dom object
+            // $(this);//jQuery object
+
+            // $(this)//tr
+            // $(this).children(); //return all td inside selected row
+            let cusID = $(this).children(":eq(0)").text(); // select first td and get text
+            let cusName = $(this).children(":eq(1)").text();
+            let cusAddress = $(this).children(":eq(2)").text();
+            let cusTP = $(this).children(":eq(3)").text();
+
+            console.log(cusID, cusName, cusAddress, cusTP);
+
+            // set values for the input fields
+            $("#txtCusID").val(cusID);
+            $("#txtCusName").val(cusName);
+            $("#txtCusAddress").val(cusAddress);
+            $("#txtCusTP").val(cusTP);
+
+        });
+
+
+        /*Remove selected row from the double click*/
+        $("#customerTable>tr").dblclick(function () {
+            $(this).remove();
+        });
+
+    });
+
+
+
+
+</script>
+</body>
+</html>
