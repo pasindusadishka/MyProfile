@@ -53,5 +53,5 @@ function saveCustomer(){
             $("#error").text("Wrong format : C00-001");
         }
     });
-$("#customers").setAttribute()
+
 

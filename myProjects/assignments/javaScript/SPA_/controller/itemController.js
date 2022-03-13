@@ -1,4 +1,4 @@
-var regExCusID = /^(I-)[0-9]{3,4}$/;
+var regExItemID = /^(I-)[0-9]{3,4}$/;
 
 
 function loadAllItems() {
@@ -17,7 +17,7 @@ function loadAllItems() {
     }
 }
 
-$("#btnSaveOrUpdate").click(function ( ){
+$("#btnISaveOrUpdate").click(function ( ){
     saveItem();
     loadAllItems();
 
@@ -28,7 +28,8 @@ function clearInputField() {
 }
 
 function saveItem(){
-    if ($("#txtItemCode").val()!=("") || $("#txtItemName").val()!=("") || $("#txtItemQty").val() != ("") || $("#txtItemPrice").val() != ("")  ) {
+    console.log("hey ");
+    if ($("#txtItemCode").val()!=("") || $("#txtItemName").val()!=("") || $("#txtItemQty").val() != ("") || $("#txtItemPrice").val() != (" ")) {
         let itemCode = $("#txtItemCode").val();
         let itemName = $("#txtItemName").val();
         let itemQty = $("#txtItemQty").val();
@@ -41,11 +42,31 @@ function saveItem(){
         alert("Please Enter Values For each Sections");
     }
 }
+/*
+function saveItem() {
+    //gather Item information
+    let itemId = $("#txtItemCode").val();
+    let itemName = $("#txtItemName").val();
+    let itemQTY = $("#txtItemQty").val();
+    let itemPrice = $("#txtItemPrice").val();
+
+    //create Object
+    var item= new itemDTO();
+    item.setItemCode(itemId);
+    item.setItemName(itemName);
+    item.setItemQTY(itemQTY);
+    item.setItemPrice(itemPrice);
+
+
+    itemDB.push(item);
+    alert("Item Saved");
+}
+*/
 
 
 $("#txtItemCode").keyup(function () {
     let input = $("#txtItemCode").val();
-    if (regExCusID.test(input)) {
+    if (regExItemID.test(input)) {
         $("#txtItemCode").css('border', '2px solid green');
         $("#error").text("");
     } else {
