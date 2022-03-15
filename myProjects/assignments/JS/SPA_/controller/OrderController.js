@@ -7,13 +7,22 @@
 
 function loadOrderId() {
     if ($("#orderId").val() == "") {
-        $("#orderId").val("001");
+        $("#orderId").val("0-001");
     } else {
-        var value = parseInt($("#orderId").val());
-        value++;
-        $("#orderId").val(value);
+        var tempID = parseInt($("#orderId").val().split("-")[1]);
+        tempID++;
+        if (tempID <=9){
+            tempID="0-00"+tempID;
+        }else if (tempID <= 99){
+            tempID="0-0"+tempID;
+        }else {
+            tempID="0-"+tempID;
+        }
+
+        $("#orderId").val(tempID);
     }
 }
+
 
 $("#btnPurchase").click(function () {
     if ($("#date").val() == "") {

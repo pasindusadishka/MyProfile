@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js-Events</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        body>section{
+            position: absolute;
+            top: 40vh;
+            left: 18vw;
+            display: flex;
+            width: max-content;
+            height: max-content;
+
+        }
+
+    body>section>div{
+        width: 200px;
+        height: 100px;
+        background-color: white;
+    }
+
+        body>section>div:nth-child(1){
+            border-bottom-left-radius: 35px;
+            border-top-left-radius: 35px;
+        }
+
+        body>section>div:nth-child(5){
+            border-bottom-right-radius: 35px;
+            border-top-right-radius: 35px;
+        }
+
+
+    body>button{
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        font-size: 26px;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 15px;
+
+    }
+
+    #btnStart{
+        top: 80vh;
+        left: 40vw;
+        color: #4cd137;
+    }
+
+    #btnStop{
+        top: 80vh;
+        left: 52vw;
+        color: red;
+    }
+
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+</section>
+
+<button id="btnStart">Start</button>
+<button id="btnStop">Stop</button>
+
+
+
+<script src="assets/JQuery/jquery-3.6.0.min.js"></script>
+
+<script>
+
+    const music = new Audio('assets/KITT-audio/Knight-Rider-Theme-Song.mp3');
+
+    let colours = ["#e30000","#ff3636","#ff5555","#ff9191","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff","#ffffff"];
+    let divisions = [$("#d1"),$("#d2"),$("#d3"),$("#d4"),$("#d5")];
+    let index = 0;
+    let temporaryColours = [];
+
+    function animateColours(){
+        temporaryColours.unshift(colours[index]);
+
+        for (let i = 0; i < temporaryColours.length; i++) {
+            divisions[i].css('background-color',temporaryColours[i]);
+        }
+
+        index++;
+
+        if (index == 5){
+            temporaryColours = [];
+        }
+        if (index == 10){
+            index = 0;
+            temporaryColours = [];
+            divisions = divisions.reverse();
+        }
+
+    }
+
+    $("#btnStart").click(function (){
+        interval = setInterval(animateColours,100);
+        music.play();
+        music.loop = true;
+        music.playbackRate = 1;
+    });
+
+    $("#btnStop").click(function (){
+        clearInterval(interval);
+        music.pause();
+    });
+
+
+</script>
+
+</body>
+</html>

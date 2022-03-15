@@ -10,14 +10,15 @@
     <link href="assets/styles/style.css" rel="stylesheet">
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
+<!--
+    <script src="https://kit.fontawesome.com/c4254e24e8.js" crossorigin="anonymous"></script>
+-->
+           <!-- body {
 
-            background: url("assets/styles/image.jpg");
-            background-size: 100%;
-            overflow: hidden;
-        }
-
+                background: url("assets/styles/image.jpg");
+                background-size: 100%;
+                overflow: hidden;
+            }-->
 
     </style>
 
@@ -25,34 +26,15 @@
 
 </head>
 <body >
+<div class="has-bg-img ">
+    <img class="bg-img position-absolute " src="assets/styles/image.jpg" alt="..." style="width: 100% ;height: 98vh ">
+
+    <div id="blur-area"></div>
 
 
 
-
-<header class="container">
-    <!--<nav class="navbar  navbar-light navbar navbar-expand-lg" id="header">
-        <img src="assets/images/Logo.png" alt="" class="logo">
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navHeader">
-                    <li class="nav-item">
-                        <a aria-current="page" class="nav-link active" href="#dashBoard" id="linkDashBoard">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a aria-current="page" class="nav-link active" href="#customerForm" id="linkCustomerForm">Customer</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a aria-current="page" class="nav-link active" href="#itemForm" id="linkItemForm">Items</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a aria-current="page" class="nav-link active" href="#orderForm" id="linkOrderForm">PlaceOrder</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>-->
-    <nav>
+<div class="container">
+  <!-- <nav>
         <img src="assets/images/Logo.png" alt="" class="logo">
         <ul>
             <li><a href="#dashBoard" id="linkDashBoard" >HOME</a> </li>
@@ -61,8 +43,26 @@
             <li><a href="#itemForm" id="linkItemForm">Manage Item</a> </li>
 
         </ul>
-    </nav>
-        </header>
+    </nav>-->
+    <div class="header">
+        <div class="side-nav">
+            <a href="#" class="logo">
+                <img src="assets/images/Logo.png" class="logo-img" width="50vw" height="100%">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#dashBoard" id="linkDashBoard"><i class="fas fa-house-user"></i> <p>DashBoard</p></a> </li>
+                <li><a href="#orderForm"id="linkOrderForm"><i class="fas fa-cart-arrow-down"></i><p>ORDER</p></a> </li>
+                <li><a href="#customerForm" id="linkCustomerForm"><i class="fas fa-users"></i><p>Manage Customer</p></a> </li>
+                <li><a href="#itemForm" id="linkItemForm"><i class="fas fa-list"></i><p>Manage Item</p></a> </li>
+                <div class="active"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+      </div>
+<section>
+
+</section>
 
             <section class="container" id="dashBoard">
 
@@ -75,16 +75,17 @@
                                 <i class="fas fa-users" style="color: black"></i>
 
                                 <h1>All Customers</h1>
-                                <h2>230</h2>
+                                <h2 id="homePageCustomers"></h2>
                             </div>
                         </div>
                         <div class="col">
                             <div class="myCard">
                                 <i class="fab fa-shopify"></i>
                                 <h1>All Items</h1>
-                                <h2>550</h2>
+                                <h2 id="homePageAmount"></h2>
                             </div>
                         </div>
+
 
                     </div>
                     <div class="row mt-4">
@@ -92,7 +93,7 @@
                             <div class="myCard">
                                 <i class="fas fa-shopping-cart" style="color: #1b57a3"></i>
                                 <h1>All Orders</h1>
-                                <h2>4100</h2>
+                                <h2 id="homePageOrders"></h2>
                             </div>
                         </div>
                     </div>
@@ -100,23 +101,23 @@
             </div>
         </section>
             <section class="container-fluid mt-3 form  " id="customerForm" >
-                <section class="row mt-3 justify-content-around">
+                <section class="row mt-3 justify-content-around" style="padding-left: 150px">
                     <div class="col-12 col-md-4">
-                        <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2">
+                        <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2" >
                             <h1 class="h1 mb-3" style="color: #fff">Customer Manage</h1>
                             <div class="mb-3">
                                 <label class="form-label" for="srcCusID" style="color: #fff">Search Customer</label>
                                 <input class="form-control" id="srcCusID" placeholder="Customer ID, NIC, Name" type="text">
                             </div>
                             <button class="btn btn-primary" id="btnSearch">Search</button>
-                            <button class="btn btn-danger">Delete</button>
+                            <button class="btn btn-danger" id="btnDelete">Delete</button>
                             <button class="btn btn-success" id="btnSaveOrUpdate">Save or Update</button>
                         </div>
                     </div>
                     <div class="col-12 col-md-5">
                         <div class="mb-3">
                             <label class="form-label" for="txtCusID" id="cus01">Customer ID </label>
-                            <input class="form-control" id="txtCusID" placeholder="Customer ID" type="text">
+                            <input class="form-control" id="txtCusID" placeholder="Customer ID" type="text" readonly="readonly">
                             <p><small id="error" class="text-danger pl-1"></small></p>
                         </div>
                         <div class="mb-3">
@@ -133,7 +134,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="row mt-4">
+                <section class="row mt-4" style="padding-left: 250px">
                     <div class="col">
                         <table class="table table-hover" STYLE="color: white">
                             <thead class="bg-danger text-white">
@@ -155,23 +156,23 @@
 
 </section>
             <section class="container-fluid mt-3 form" id="itemForm">
-                <section class="row mt-3 justify-content-around">
+                <section class="row mt-3 justify-content-around" style="padding-left: 150px" >
                     <div class="col-12 col-md-4">
-                        <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2">
+                        <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2" >
                             <h1 class="h1 mb-3" style="color: white">Item Manage</h1>
                             <div class="mb-3">
                                 <label class="form-label" for="srcItemCode">Search Item</label>
-                                <input class="form-control" id="srcItemCode" placeholder="Customer ID, NIC, Name" type="text">
+                                <input class="form-control" id="srcItemCode" placeholder="Item ID" type="text">
                             </div>
                             <button class="btn btn-primary" id="btnISearch" >Search</button>
                             <button class="btn btn-danger" id="btnDelete">Delete</button>
                             <button class="btn btn-success" id="btnISaveOrUpdate">Save or Update</button>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5" style="border-bottom-color: #5c636a">
                         <div class="mb-3">
                             <label class="form-label" style="color: white" for="txtItemCode">Item Code</label>
-                            <input class="form-control" id="txtItemCode" placeholder="Item Code" type="text">
+                            <input class="form-control" id="txtItemCode" placeholder="Item Code" type="text" readonly="readonly">
                         </div>
                         <div class="mb-3">
                             <label class="form-label" style="color: white" for="txtItemName">Item Name</label>
@@ -187,7 +188,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="row mt-4">
+                <section class="row mt-4" style="padding-left: 250px">
                     <div class="col">
                         <table class="table table-hover" STYLE="color: white">
                             <thead class="bg-danger text-white">
@@ -208,7 +209,7 @@
 
         </section>
             <section class="container-fluid mt-3  form" id="orderForm">
-<section class="row m-2 rounded-3" >
+<section class="row m-2 rounded-3 " style="padding-left: 250px" >
     <div class="col bg-light m-1 card">
         <h5 class="card-header bg-primary " style="color: whitesmoke">Customer</h5>
         <div class="card-body">
@@ -298,7 +299,7 @@
 
                     <div class="col-md-4 fw-bold">
                         <label class="form-label" for="orderQty">Order Qty :</label>
-                        <input class="form-control" id="orderQty" required type="text">
+                        <input class="form-control" id="orderQty" required type="number" min="1">
                     </div>
 
                 </div>
@@ -319,13 +320,13 @@
         <div class="row mb-5">
             <div class="card-body">
                 <div class="col-md-6 fw-bold ">
-                    <label class="form-label text-primary bg-opacity-10" for="total">Total </label>
-                    <h2 class="fw-lighter text-primary bg-opacity-10" id="total">00.00/=</h2>
+                    <label class="form-label text-white bg-opacity-10" for="total">Total </label>
+                    <h2 class="fw-lighter text-white bg-opacity-10" id="total">00.00/=</h2>
                 </div>
 
                 <div class="col-md-6 fw-bold ">
-                    <label class="form-label text-danger bg-opacity-10" for="subTotal">SubTotal </label>
-                    <h2 class="fw-lighter text-danger bg-opacity-10" id="subTotal">00.00/=</h2>
+                    <label class="form-label text-white bg-opacity-10" for="subTotal">SubTotal </label>
+                    <h2 class="fw-lighter text-white bg-opacity-10" id="subTotal">00.00/=</h2>
                 </div>
 
                 <div class="row">
@@ -357,7 +358,7 @@
     </div>
 </section>
 
-<section class="row m-2">
+<section class="row m-2" style="padding-left: 250px">
     <table class="table table-success table-striped mt-5">
         <thead>
         <tr>

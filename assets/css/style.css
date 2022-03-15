@@ -4,8 +4,8 @@
     width: 98.9vw;
     background-color: #DFE4EA;
     height: 4vh;
-    position: fixed;
-    z-index: 500;
+    position: relative;
+    z-index: 2;
 }
 
 #home > nav > p {
@@ -50,9 +50,10 @@
 /*main*/
 
 #homeMainSelection {
-    background-image: url("/assets/images/backgroundPic.jpeg");
+    background-color: #0c4128;
     height: 100vh;
     width: 98.9vw;
+
 }
 
 #homeMainSelection > section:first-child > img {

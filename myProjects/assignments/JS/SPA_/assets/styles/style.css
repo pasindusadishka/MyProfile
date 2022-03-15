@@ -4,6 +4,82 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("image.jpg");
+    background-size: cover;
+    position: absolute;
+
+}
+.side-nav{
+    width: 200px;
+    height: 100%;
+    background: #20c997;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.nav-links{
+    list-style: none;
+    position: relative;
+}
+.nav-links li{
+    padding: 5px 0;
+}
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px ;
+    display: flex;
+    align-items: center;
+}
+.nav-links li a i{
+    font-size: 22px;
+    margin-right: 20px;
+}
+.nav-links li:hover a{
+    color: #0f0f15;
+    transition: 0.3s;
+
+}
+.nav-links li:hover ~ .active{
+    display: block;
+}
+.nav-links li:nth-child(1):hover ~ .active{
+    top: 3%;
+}
+.nav-links li:nth-child(2):hover ~ .active{
+    top: 25%;
+}
+.nav-links li:nth-child(3):hover ~ .active{
+    top:50%;
+}
+.nav-links li:nth-child(4):hover ~ .active{
+    top: 78%;
+}
+
+.active{
+    background: white;
+    width: 100%;
+    height: 47px;
+    position: absolute;
+    left: 0;
+    top: 3%;
+    z-index: -1;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(255,255,255,0.4);
+    display: none;
+    transition: 0.5s;
+}
+.logo{
+    display: block;
+    margin-bottom: 130px;
+}
+.logo-img{
+    width: 100px;
+}
 
 .container{
     display: inline;
@@ -34,7 +110,7 @@
     z-index: 1;
 
 }
-nav{
+/*.nav{
 
     width: 100%;
     height: 100px;
@@ -47,24 +123,24 @@ nav{
     font-size: 30px;
     text-decoration: #0f0f15;
     justify-content: space-between;
-}
+}*/
 .logo{
     width: 120px;
     cursor: pointer;
 
 }
-nav ul li{
+/*nav ul li{
     list-style: none;
     display: inline-block;
     margin: 0 30px;
 
-}
-nav ul li a{
+}*/
+/*nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 17px;
 
-}
+}*/
 #blur ul:nth-child(2) li{
     filter: blur(0);
     background-color: #49e149;
@@ -109,6 +185,8 @@ nav ul li a{
     border-radius:30px ;
     margin-top: 100px;
     display: block;
+   /* height: 40vh;
+    width: 10vw;*/
 
 }
 .myCard>i{
@@ -134,5 +212,22 @@ nav ul li a{
     text-align: center;
     font-family: Ubuntu;
     padding-top: 2px;
+}
+@media only screen and (max-width: 600px) {
+    .side-nav{
+        width: 110px;
+    }
+    .logo-img{
+        display: none;
+    }
+    .nav-links li a p {
+        display: none;
+    }
+    .nav-links li a i {
+        margin-right: 0;
+    }
+    .nav-links li a {
+        justify-content: center;
+    }
 }
 

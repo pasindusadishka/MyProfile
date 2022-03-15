@@ -12,8 +12,9 @@ $("#linkDashBoard").click(function () {
     console.log("Hey bitch");
 
 
-    /* $("#homePageCustomers").text(customerDB.length);
-     $("#homePageAmount").text(itemDB.length);*/
+     $("#homePageCustomers").text(customerDB.length);
+     $("#homePageAmount").text(itemDB.length);
+     $("#homePageOrders").text(orderDB.length);
 });
 
 $("#linkCustomerForm").click(function () {
