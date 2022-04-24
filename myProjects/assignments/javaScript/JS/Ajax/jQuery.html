@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX with jQuery</title>
+  <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<h1>Hello Ajax..!</h1>
+<p id="display"> hey there </p>
+<button id="btn1" class="btn-outline-dark">Send Request to File</button>
+<hr >
+
+<button id="btn2">Send Request to XML</button>
+<button id="btn3" class="bg-success">Send Request to json</button>
+
+<section class="row mt-4">
+  <div class="col">
+    <table class="table table-hover" STYLE="color: black">
+      <thead class="bg-danger text-white">
+      <tr>
+        <th>Customer ID</th>
+        <th>Customer Name</th>
+        <th>Customer Address</th>
+        <th>Salary</th>
+      </tr>
+      </thead>
+      <tbody id="customerTable">
+
+
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="row mt-4">
+  <div class="col">
+    <table class="table table-hover" STYLE="color: black">
+      <thead class="bg-dark text-white">
+      <tr>
+        <th>Customer ID</th>
+        <th>Customer Name</th>
+        <th>Customer Address</th>
+        <th>Salary</th>
+      </tr>
+      </thead>
+      <tbody id="customerTable2">
+
+
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/boostrap/js/bootstrap.min.js"></script>
+<script>
+  $("#btn1").click(function (){
+
+    console.log("Started");
+
+    $.ajax({
+      url:"db/db.txt",
+      // async:false, // default = true (async) // false = sync (blocking)
+      success:function(resp){
+        $("#display").text(resp);
+      },
+      error:function(xhr){
+        console.log(xhr);
+      }
+
+    });
+
+    console.log("Ended");
+
+  });
+
+  $("#btn2").click(function (){
+
+    console.log("Started");
+
+    $.ajax({
+      url:"db/db.xml",
+      // async:false, // default = true (async) // false = sync (blocking)
+      success:function(resp){
+        $("#display").text(resp);
+          for (var i=0;i < $(resp).children().children().length;i++){
+            let id = $(resp).children().children().eq(i).find("id").text();
+            let name = $(resp).children().children().eq(i).find("name").text();
+            let address = $(resp).children().children().eq(i).find("address").text();
+            let salary = $(resp).children().children().eq(i).find("salary").text();
+
+            console.log(id, name, address, salary);
+            let row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+            $("#display").text(id,name,address,salary);
+
+            $("#customerTable").append(row);
+          }
+
+
+      },
+      error:function(xhr){
+        console.log(xhr);
+      }
+
+    });
+
+    console.log("Ended");
+
+  });
+
+  $("#btn3").click(function (){
+
+    console.log("Started");
+
+    $.ajax({
+      url:"db/db.json",
+      // async:false, // default = true (async) // false = sync (blocking)
+      success:function(resp){
+        let array = $(resp);
+        // console.log(array[i].id);
+        $("#display").text(array.length);
+        for (var i=0;i < array.length;i++){
+          let id = array[i].id;
+          let name = array[i].name;
+          let address = array[i].address;
+          let salary = array[i].salary;
+
+
+          console.log(id, name, address, salary);
+          let row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
+          $("#display").text(id,name,address,salary);
+
+          $("#customerTable2").append(row);
+        }
+
+
+      },
+      error:function(xhr){
+        console.log(xhr);
+      }
+
+    });
+
+    console.log("Ended");
+
+  });
+</script>
+</body>
+</html>

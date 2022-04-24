@@ -1,461 +1,790 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Pasindu-Sadishka</title>
-    <link href="assets/images/Profile_Pitcher.png" rel="icon">
-    <link href="assets/css/normalize.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Pasindu Sadishka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
-    <meta content="Pasindu Sadishka,Pasindu Sadishka" name="keywords">
-    <meta content="The latest Tweets from Pasindu Sadishka (pasindusadishka3) IJSE Student #Sri Lanka."
-          name="description">
-    <meta content="width=device-width initial-scale=1" name="viewport">
-    <meta content="#2d3436" name="theme-colour">
-    <meta content="IE=edge,chrome" http-equiv="X-UA-Compatible">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+   9 <link href="https://fonts.googleapis.com/css2?family=Acme&family=Amarante&family=Aref+Ruqaa:wght@700&family=Bakbak+One&family=Baloo+Chettan+2:wght@500&family=Metamorphous&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="assets/css/boostrap/css/bootstrap.min.css" rel="stylrsheet">
 
-</head>
 
+    <script src="https://kit.fontawesome.com/0dad7d7bbf.js" crossorigin="anonymous"></script>
+    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
+    </head>
 <body>
+   <header>
+    <div class="header body">
+        <div class="side-nav">
+            <a href="#" class="logo">
+                <img src="assets/images/me.jpeg" class="logo-img" width="50vw" height="100%">
+                    <h3 style="color: aliceblue; margin-left: 80px; margin-bottom: 10px; align-items: justify-self: unset;;" >Pasindu Sadishka</h3>
+                    <pr class="para" >GDSE-BSc(Hons) in Computer Science student at IJSE(Institute of Software Engineering)<br></pr>
+                    <br><span class="" style="color:aliceblue ; margin-left:90px;"><i class="fas fa-map-marker-alt " style="color: aliceblue;"></i> Galle</span><br>
 
-<header id="home">
-    <nav>
-        <p>Pasindu</p>
-        <ul>
-            <li>
-                <a href="#homeMainSelection"> Home </a>
-            </li>
 
-            <li>
-                <a href="#about"> About </a>
-            </li>
+                    
+                                    
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" id="linkDashBoard"><i class="fas fa-house-user"></i> <p>Home</p></a> </li>
+                <li><a href="#about"id="linkOrderForm"><i class="fas fa-user"></i><p>About</p></a> </li>
+                <li><a href="#skillsForm" id="linkCustomerForm"><i class="fas fa-award"></i><p>Skills </p></a> </li>
+                <li><a href="#portfolio" id="linkItemForm"><i class="fas fa-laptop-code"></i><p>Portfolio</p></a> </li>
+                <li><a href="#contactForm" id="linkItemForm"><i class="fas fa-envelope"></i><p>Contact me</p></a> </li>
 
-            <li>
-                <a href="#skill"> Skill </a>
-            </li>
-
-            <li>
-                <a href="#projects"> Projects </a>
-            </li>
-
-            <li>
-                <a href="#contact"> Contact </a>
-            </li>
-        </ul>
-    </nav>
+                <div class="active"></div>
+            </ul>
+                   
+        </div>
+    </div>
+    
+    
 </header>
-
-
-<main>
-    <!--home-->
-    <section id="homeMainSelection">
-        <section>
-            <img alt="My profile photo" src="assets/images/myProfile.jpeg">
-        </section>
-
-        <aside>
-            <h1>Hi ! <br>I'm Pasindu <wbr> Sadishka <br><span>Software Developer .</span></h1>
-
-            <p>I am an undergraduate of
-                IJSE(Institute of Software Engineering), who is a software
-                development enthusiast, knowledgeable in both computer science and software engineering. I am eager
-                to improve and learn new and necessary skills and highly motivated to do my best for the sake of
-                helping myself and the company advancement in the software engineering industry.</p>
-        </aside>
-
+<main id = main class="mainContent-position full-width">
+            
+    <!-- Home Section -->
+    <section id="home">
+        <div id="home-img-div">
+            <div class="home-para-div">
+                <div id="para-animated">
+                    <img src="https://readme-typing-svg.herokuapp.com?font=Quicksand&color=ecf0f1&size=80&center=true&vCenter=true&height=100&width=1000&lines=Hi,+I'm+Pasindu+Sadishka+;Welcome+to+My+Profile!"
+                    alt="Title" />
+                </div>
+            </div>
+            <div>
+                <a href="#about"><i class="fas fa-angle-double-down"></i></a>
+            </div>
+            <div id="menu">
+                <label for="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input type="checkbox" id="toggle-menu">
+                <div id="menu-bg">
+                    <div class="nav-tabs">
+                        <ul>
+                            <li>
+                                <a href="#home">
+                                    <span><i class="fas fa-home"></i></span>
+                                    <span>Home</span>
+                                    <!-- Home -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about">
+                                    <span><i class="fas fa-user"></i></span>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#skills">
+                                    <span><i class="fas fa-award"></i></span>
+                                    <span>Skills</span>
+                                    <!-- Skills -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">
+                                    <span><i class="fas fa-laptop-code"></i></i></span>
+                                    <span>Portfolio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contactMe">
+                                    <span><i class="fas fa-envelope-open-text"></i></span>
+                                    <span>Contact Me</span>
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
     </section>
-    <!--contact navigation-->
-    <section id="contactNavigationSelection">
-        <nav>
-            <i class="fab fa-whatsapp"></i>
-            <a href="tel:+94764622658" target="_self">+94764622658</a>
-
-            <i class="fas fa-envelope-square"></i>
-            <a href="mailto:pasindusadishka3@gmail.com" target="_blank">pasindusadishka3@gmail.com</a>
-
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://github.com/pasindusadishka?tab=overview&from=2021-11-01&to=2021-11-23"
-               target="_blank">
-                <i class="fab fa-github-square"></i></a>
-
-            <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/pasindu-sadishka-a820b8211//" target="_blank">
-                <i class="fab fa-linkedin"></i></a>
-
-            <a href="https://core.telegram.org/blackberry/login" target="_blank"><i class="fab fa-telegram-plane"></i></a>
-            <a href="https://app.slack.com/client/T02HHPFUME3/C02HHPKM86T/user_profile/U02HYF75P5Hgit"
-               target="_blank"><i class="fab fa-slack"></i></a>
-
-
-        </nav>
-    </section>
-    <!--About-->
     <section id="about">
-        <h1>About</h1>
-        <section>
-            <aside>
-                <img alt="Error load the pitcher" src="assets/images/MyAbout.jpeg">
-            </aside>
-        </section>
-
-        <section>
-            <p> I am an enthusiastic individual who is eager
-                to learn new things perpetually while
-                getting myself up-to-date with cutting edge technologies. I am good
-                at being a team player as well as leading a team. I am more keen on Web development and Mobile
-                Development.
-                I am Hardworking individual who likes to face difficult situations which open up new opportunities. and
-                highly
-                motivated to improve my skills and have
-                experience in working with clients to ensure their best satisfaction.
-            </p>
-        </section>
-
-    </section>
-
-    <!--Education-->
-    <section id="education">
-        <h1>Education <wbr> & <wbr> Experience</h1>
-
-        <div></div> <!--this section use for main bar-->
-
-
-        <div class="shortBar"></div>
-        <div>
-            <p>
-                <span>Primary & Higher Education.</span> <br>
-                Mahindha College Galle <br>
-                2007-2020
-            </p>
+        <div class="section-header">
+            <h1>ABOUT ME</h1>    
         </div>
-
-        <div class="shortBar"></div>
-
-        <div>
-            <p>
-                <span>President Scout </span> <br>
-                2018
-            </p>
-        </div>
-
-        <div class="shortBar"></div>
-
-        <div>
-            <p>
-                <span>Follow the Beeline English Course </span> <br>
-                2019
-            </p>
-        </div>
-
-        <div class="shortBar"></div>
-
-        <div>
-            <p>
-                <span>Follow the GDSE Course </span> <br>
-                GDSE -Institute Of <br>Java Software Engineering <br>
-                (2021-2023)
-            </p>
-        </div>
-
-        <div class="shortBar"></div>
-
-        <div>
-            <p>
-                <span>Undergraduate <wbr> (B.Sc. (Hons) in Software Engineering) </span> <br>
-                University of Kelaniya. <br>
-                2021-Present
-            </p>
-        </div>
-
-        <div>
-
-        </div>
-
-    </section>
-
-    <!--Skill-->
-    <section id="skill">
-        <!--Languages-->
-        <section>
-            <h1>Languages</h1>
-
+        <br>
+        <div class="section-content">
+            <!-- Profile Picture -->
             <div>
-
-                <span>
-                    <img alt="Loading error this image" border="1" src="assets/icon/javaIcon.ico" width="75">
-                </span>
-
-                <span>
-                    <img alt="Loading error this image" src="assets/icon/htmlIcon.png">
-                </span>
-
-                <span>
-                    <img alt="Loading error this image" src="assets/icon/javaFx.png" >
-                </span>
-
-                <span>
-                    <img alt="Loading error this image" src="assets/icon/javascriptIcon.png" >
-                </span>
-
-                <span>
-                    <img alt="Loading error this image" src="assets/icon/cssIcon.png" >
-                </span>
-
-                <span>
-                    <img alt="Loading error this image" src="assets/icon/pythonIcon.png" >
-                </span>
-
+                <div>
+                    <img class="avatar" src="assets/images/2.jpeg" alt="Profile Picture" >
+                    <img  src="assets/images/3.jpeg" alt="Profile Picture" >
+                    <!-- <img src="assets/images/profile_pic.jpeg" alt="Profile Picture" width = "280px"> -->
+                </div>
+                <div>
+                    <!-- Brief Introduction -->
+                    <div>
+                        <p>I'm a highly enthusiastic and a versatile individual with an easy going personality, pursuing to
+                            achieve a greater success through delivering the optimum contribution to the tech world
+                            and improve my career life by exercising my skills and knowledge in a
+                            dynamic and a challengeable working environment.</p><br>
+                    </div>
+                    <!-- Summarized Details -->
+                    <div>
+                        <ul>
+                            <!-- <li>
+                                <label>Age </label>
+                                <span>: 21</span>    
+                            </li> -->
+                            <li>
+                                <label class="fas fa-map-marker-alt"></label>
+                                <span>  Galle, Srilanka</span>
+                            </li><br>
+                            <li>
+                                <label class="fas fa-phone"></label>
+                                <span> +94764622658 </span>
+                            </li><br>
+                            <li>
+                                <label class="fas fa-envelope"></label>
+                                <span> pasindusadishka3@gmail.com</span>
+                            </li><br>
+                            <li>
+                                <label class="fas fa-street-view"> </label>
+                                <span>: Male</span>    
+                            </li>
+                        </ul>
+                         <!-- <span><label>Age : </label>22</span> <br>
+                        <span><label>City : </label>Galle</span> <br>
+                        <span><label>Study : </label>Institute of Software Engineering</span> <br>
+                        <span><label>Degree : </label>BSc(Hons) in Computer Science</span>  -->
+                    </div>
+                </div>
             </div>
-
-        </section>
-        <!--Tools-->
-        <section>
-            <h1>Tools</h1>
-
-            <div>
-                <span>
-                   <img alt="Loading error this image" src="assets/icon/geany.png" >
-                </span>
-
-                <span >
-                    <img alt="Loading error this image" src="assets/icon/intellijIcon.png" >
-                </span>
-
-                <span >
-                    <img alt="Loading error this image" src="assets/icon/netbeansIcon.png" >
-                </span>
-
-                <span >
-                    <img alt="Loading error this image" src="assets/icon/sceneBuilderIcon.png" >
-                </span>
-
-                <span >
-                    <img alt="Loading error this image" src="assets/icon/photoShop.png" >
-                </span>
-
-            </div>
-        </section>
-    </section>
-    <!--projects-->
-    <section id="projects">
-        <!--Projects-->
-        <section>
-            <h1>Projects</h1>
-
             <section>
-
-
-                <div>
-                    <a href="myProjects/assignments/JS/SPA_/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/SPA.png"></a>
+                <!-- Interests -->
+                <div id="interests" >
+                    <label>Interests : </label>
+                    <!-- <span><br></span> -->
+                    <div>
+                        <figure>
+                            <!-- <img src="assets/images/q.png" alt="music" width="30"> &nbsp; -->
+                            <i class="fas fa-music"></i>
+                            <figcaption>Music</figcaption>
+                        </figure>
+                        <figure>
+                            <!-- <img src="assets/images/q.png" alt="movies" width="30"> &nbsp; -->
+                            <i class="fas fa-hiking"></i>
+                            <figcaption>Traveling</figcaption>
+                        </figure>
+                        <figure>
+                            <!-- <img src="assets/images/q.png" alt="sports" width="30"> &nbsp; -->
+                            <i class="fas fa-running"></i>
+                            <figcaption>Sports</figcaption>
+                        </figure>
+                    </div>
+                    
                 </div>
-
-                <div>
-                    <a href="myProjects/assignments/JS/SimplePOS/index.html" target="_blank">
-                        <img src="assets/images/Simple_POS.png" alt="Loading error this image">
-                    </a>
-                </div>
-
             </section>
-        </section>
-        Assignment
-        <section>
-            <h1>Assignments</h1>
-            <section>
-
-                <div>
-                    <a href="myProjects/css/Layouts/Case01/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_01.png"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Layouts/Case02/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_02.png" ></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Layouts/Case03/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_03.png" ></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Layouts/Case04/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_04.png" width="250"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Layouts/Case05/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_05.png" width="250"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Layouts/Case06/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_06.png" width="250"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Animation/Case01/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_07.png" width="250"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Animation/Case02/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_08.png" width="250"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Animation/Case03/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/assignment_09.png" width="250"></a>
-                </div>
-
-                <div>
-                    <a href="myProjects/css/Animation/Case04/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Assignment/Car.png" width="250"></a>
-                </div>
-                <div>
-                    <a href="myProjects/assignments/JS/KITT/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Kiit.png" width="250"></a>
-                </div>
-                <div>
-                    <a href="myProjects/assignments/JS/Que/index.html" target="_blank">
-                        <img alt="Loading error this image" src="assets/images/Que.png" width="250"></a>
-                </div>
-
-            </section>
-
-        </section>
-    </section>
-    <!--Gallery-->
-    <section id="gallery">
-        <h1>Gallery</h1>
-
-        <div class="box">
-            <span style="--i:1;">
-                <img alt="Loading error this image" src="assets/images/1.jpeg" >
-            </span>
-
-            <span style="--i:2;">
-                <img alt="Loading error this image" src="assets/images/2.jpeg" >
-            </span>
-
-            <span style="--i:3;">
-                <img alt="Loading error this image" src="assets/images/3.jpeg" >
-            </span>
-
-            <span style="--i:4;">
-                <img alt="Loading error this image" src="assets/images/MyAbout.jpeg" >
-            </span>
-
-            <span style="--i:5;">
-                <img alt="Loading error this image" src="assets/images/myProfile.jpeg">
-            </span>
-
-        </div>
-
-        <div onclick="window.location.href='Grid/galleryGrid/index.html'">
-            <p>View more</p>
         </div>
     </section>
-    <!--Contact-->
-    <section id="contact">
-        <h1>Contact</h1>
-        <section>
+    <section id="skillsForm">
+        <div class="title-div" >
+            <h1> <span>SKILLS</span></h1>
+            <div id="slider">
+                <div id="slid-con-div">
+        
+                  <div class="slid-div">
+                    <div id="img_1" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_2" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_3" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_4" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_5" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_6" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_7" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_8" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_9" class="img-div"></div>
+                  </div>
+        
+                  <div class="slid-div">
+                    <div id="img_10" class="img-div"></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+       
+    </section>
+    <div id="edu">
+        <h2 class="title-div">Educations And Experience</h2>
 
-            <img alt="Loading error this icon" src="assets/images/gif/locationGif.gif">
-            <p>
-                <b>No 17/1,<br>Lower Dicson Rd,
-                    <wbr>
-                   <br>
-                    Galle.
-                </b>
-            </p>
-            <br>
-            <img alt="Loading error this icon" class="contactImage" src="assets/images/gif/whatsAppGif.gif"><b>
-            <a class="contact" href="tel:+94764622658" target="_self">+94761339805</a></b>
-            <br><br><br>
+        <div id="time-flex-div">
+            <div id="timeline">
+              <hr />
+            </div>
+            <div class="timeline"><i class="fas fa-user-graduate"></i>
+                <span style="color: #ffffff;"> Education </span>
+                <hr class="shortBar"  />
+                <div id="timeline">
+                    <hr />
+                </div>
+                <div id="section-content">
+                    <div id="sq">
+                        <div>
+                            <a href="https://ijse.lk" target="blank">
+                                <!-- <img src="assets/images/q.png" alt="ijse" width="30"> -->
+                            </a>
+                        </div>
+                        <div >
+                            <p> <a href="https://ijse.lk" target="blank">
+                                <strong style="color: #ffffff;" id="name">Institute of Software Engineering</strong>
+                                </a>
+                            </p>
+                            <p id="name" style="color: #95a5a6;">BSc(Hons) in Computer Science</p>
+                            <p id="name" style="color: #95a5a6;">2021-Present</p>
+                        </div>
+                    </div>
+                     <div id="sq">
+                        <div>
+                            <a href="https://mahindacollege.lk/" target="blank">
+                                <!-- <img src="assets/images/q.png" alt="iit" width="30"> -->
+                            </a>
+                        </div>
+                        <div>
+                            <p> <a href="https://mahindacollege.lk/" target="blank">
+                                <strong id="name" style="color: #ffffff;">Mahinda College</strong>
+                                </a>
+                            </p>         
+                            <p id="name" style="color: #95a5a6;">Advance Level</p>                
+                            <p id="name" style="color: #95a5a6;">2017-2020</p>
+                        </div>
+                    </div>
+                    <div id="sq">
+                        <div>
+                            <a href="https://mahindacollege.lk/" target="blank">
+                                <!-- <img src="assets/images/q.png" alt="iit" width="30"> -->
+                            </a>
+                        </div>
+                        <div>
+                            <p> <a href="https://mahindacollege.lk/" target="blank">
+                                <strong id="name" style="color: #ffffff;">Vidyaloka College</strong>
+                                </a>
+                            </p>         
+                            <p id="name" style="color: #95a5a6;">Ordinary Level</p>                
+                            <p id="name" style="color: #95a5a6;">2007-2017</p>
+                        </div>
+                    </div>
+                </div>               
 
-            <img alt="Loading error this icon" class="contactImage" src="assets/images/gif/telegrameGif.gif"><b>
-            <a class="contact" href="tel:+94764622658" target="_self">+94764622658</a></b>
-            <br><br><br>
+            </div>
+            <div id="ex"><i class="fas fa-user-graduate"></i>
+                <span style="color: #ffffff;"> Experience </span>
+                <hr class="shortBar"  />
+                <div id="miniBar">
+                    <hr/>
+                </div>
+                <div id="exContent">
+                    <div id="squar">
+                        <div>
+                            <a href="https://ijse.lk" target="blank">
+                                <!-- <img src="assets/images/q.png" alt="ijse" width="30"> -->
+                            </a>
+                        </div>
+                        <div >
+                            <p> <a href="https://ijse.lk" target="blank">
+                                <strong style="color: #ffffff;" id="name">Fiveer</strong>
+                                </a>
+                            </p>
+                            <p id="name" style="color: #95a5a6;">Freelancer</p>
+                            <p id="name" style="color: #95a5a6;">2020-Present</p>
+                        </div>
+                    </div>
+                    <div id="squar">
+                        <div>
+                            <a href="https://ijse.lk" target="blank">
+                                <!-- <img src="assets/images/q.png" alt="ijse" width="30"> -->
+                            </a>
+                        </div>
+                        <div >
+                            <p> <a href="https://ijse.lk" target="blank">
+                                <strong style="color: #ffffff;" id="name">College Of Technolgy</strong>
+                                </a>
+                            </p>
+                            <p id="name" style="color: #95a5a6;">Graphic Designing</p>
+                            <p id="name" style="color: #95a5a6;">2019-2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
 
-            <img alt="Loading error this icon" class="contactImage" src="assets/images/gif/mailGif.gif" ><b>
-            <a class="contact" href="mailto:pasindusadishka3@gmail.com"
-               target="_blank">pasindusadishka3@gmail.com</a></b>
-        </section>
-        <div></div>
-        <!--form-->
-        <section>
-            <div>
-                <form>
-                    <label for="email">Email Address</label><br>
-                    <input id="email" type="text" value="Enter Email"><br><br>
+        </div>   
+    </div>
+    <section id="portfolio">
 
-                    <label for="name">Name</label><br>
-                    <input id="name" type="text" value="Enter your name"><br><br>
+        <!-- Assignments -->
 
-                    <label for="feedback">Feedback</label><br>
-                    <textarea id="feedback"></textarea><br>
+        <section id="assignments">
 
-                    <input id="formSubmit" type="submit" value="Submit"><br><br>
-                </form>
+            <div class="section-header">
+                <h1>PORTFOLIO</h1>
+            </div>
+            
+            <!-- Header Assignments -->
+            <div id="assignment-header">
+                <h2>ASSIGNMENTS</h2>
+            </div>
+
+            <!-- red -->
+            <div class="container">
+                <input type="radio" name="radioBtn" id="btn7">
+                <input type="radio" name="radioBtn" id="btn8">
+                <input type="radio" name="radioBtn" id="btn9">
+                <!-- <input type="radio" name="radioBtn" id="btn3"> -->
+
+                <!-- green -->
+                <div class="assignment-content">
+
+                    <!-- blue - grid-->
+                    <div id="assignment-set1" class="assignment-set">
+
+                        <!-- orange -->
+                        <div class="grid-item1">
+                            <h3>Assignment 01</h3>
+                            <div class="assignment-title">
+                                <p>CSS Layout Designing</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Layouts/Case01/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item2">
+                            <h3>Assignment 02</h3>
+                            <div class="assignment-title">
+                                <p>Simple Web Layout</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Layouts/Case02/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item3">
+                            <h3>Assignment 03</h3>
+                            <div class="assignment-title">
+                                <p>CSS Fixed Layout</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Layouts/Case03/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item4">
+                            <h3>Assignment 04</h3>
+                            <div class="assignment-title">
+                                <p>CSS Sticky Layout</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Layouts/Case04/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item5">
+                            <h3>Assignment 05</h3>
+                            <div class="assignment-title">
+                                <p>CSS Responsive Layout</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Layouts/Case05/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item6">
+                            <h3>Assignment 06</h3>
+                            <div class="assignment-title">
+                                <p>CSS Navigation Transition</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Layouts/Case06/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- blue - grid -->
+                    <div id="assignment-set2" class="assignment-set">
+
+                        <!-- orange -->
+                        <div class="grid-item7">
+                            <h3>Assignment 07</h3>
+                            <div class="assignment-title">
+                                <p>CSS Circle Border Transition</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Transitions/Case_01/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item8">
+                            <h3>Assignment 08</h3>
+                            <div class="assignment-title">
+                                <p>Basic Rotaion With Animation</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Animation/Case01/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item9">
+                            <h3>Assignment 09</h3>
+                            <div class="assignment-title">
+                                <p>Water Drop Animation</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Animation/Case02/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item10">
+                            <h3>Assignment 10</h3>
+                            <div class="assignment-title">
+                                <p>Slider Animation</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Animation/Case03/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item11">
+                            <h3>Assignment 11</h3>
+                            <div class="assignment-title">
+                                <p>Car Animation</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/css/Animation/Case04/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- blue - grid -->
+                    <div id="assignment-set3" class="assignment-set">
+
+                        <!-- orange -->
+                        <div class="grid-item12">
+                            <h3>Assignment 12</h3>
+                            <div class="assignment-title">
+                                <p>JavaScript Mouse Event</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myprojects/JS/12.Assignment/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item13">
+                            <h3>Assignment 13</h3>
+                            <div class="assignment-title">
+                                <p>JavaScript Queue</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/javaScript/JS/Que/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item14">
+                            <h3>Assignment 14</h3>
+                            <div class="assignment-title">
+                                <p>JavaScript Queue</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/javaScript/JS/Que/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item15">
+                            <h3>Assignment 15</h3>
+                            <div class="assignment-title">
+                                <p>KITT Light System</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/javaScript/JS/KITT/ " target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item16">
+                            <h3>Assignment 16</h3>
+                            <div class="assignment-title">
+                                <p>Single Page Application(SPA)</p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="myProjects/assignments/javaScript/JS/SPA_/" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nav Buttons -->
+                <nav>
+                    <label for="btn7" class="nav1 active"></label>
+                    <label for="btn8" class="nav2"></label>
+                    <label for="btn9" class="nav3"></label>
+                </nav>
             </div>
 
         </section>
 
-        <section>
-            <nav>
-                <div>
-                    <a href="https://twitter.com" target="_blank"> <i class="fab fa-twitter"></i> </a>
-                </div>
+        <!-- Projects -->
 
-                <div>
-                    <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook"></i> </a>
-                </div>
+        <section id="projects">
+            <div class="section-header">
+                <h1>PORTFOLIO</h1>
+            </div>
+            
+            <!-- Header Projects -->
+            <div id="project-header">
+                <h2>PROJECTS</h2>
+            </div>
 
-                <div>
-                    <a href="https://github.com/TharinduDakshina?tab=overview&from=2021-11-01&to=2021-11-23" target="_blank"> <i class="fab fa-stack-overflow"></i> </a>
-                </div>
+            <!-- red -->
+            <div class="container">
 
-                <div>
-                    <a href="https://www.linkedin.com/in/tharindu-dakshina-21121b225/" target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
-                </div>
+                <!-- green -->
+                <div class="project-content">
 
-                <div>
-                    <a href="https://app.slack.com/client/T02HHPFUME3/C02HHPKM86T/user_profile/U02HYF75P5Hgit" target="_blank"> <i class="fab fa-slack"></i> </a>
-                </div>
+                    <!-- blue - grid-->
+                    <div id="project-set1" class="project-set">
 
-            </nav>
+                        <!-- orange -->
+                        <div class="grid-item1">
+                            <h3>Student Management System</h3>
+                            <div class="project-title">
+                                <p>
+                                    Programming Fundamentals <br> 
+                                    Java
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/shinyZu/Student_Management_System" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item2">
+                            <h3>Room Reservation System</h3>
+                            <div class="project-title">
+                                <p>
+                                    Java <br>
+                                    JavaFX
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/pasindusadishka/Room_Reservation_System" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item3">
+                            <h3>Vehicle Parking System</h3>
+                            <div class="project-title">
+                                <p>
+                                    Java <br>
+                                    JavaFX <br>
+                                    Object-Oriented Programming
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/pasindusadishka/Vehicle_Parking_System" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item4">
+                            <h3>POS System</h3>
+                            <div class="project-title">
+                                <p>
+                                    Java (OOP)<br>
+                                    JavaFX <br>
+                                    JDBC <br>
+                                    Layered Architecture
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/pasindusadishka/POS_System-JDBC-Layered" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item5">
+                            <h3>Student Registration System</h3>
+                            <div class="project-title">
+                                <p>
+                                    Java (OOP) <br>
+                                    JavaFX <br>
+                                    JPA-Hibernate <br>
+                                    Layered Architecture
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/pasindusadishka/Student_Registration_System-Hibernate-Layered" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item6">
+                            <h3>Coffee Shop Management System</h3>
+                            <div class="project-title">
+                                <p>
+                                    Java (OOP)<br>
+                                    JavaFX <br>
+                                    Java Mail <br>
+                                    JDBC <br>
+                                    Layered Architecture
+                                </p>
+                            </div>
+                            <div class="btn-container">
+                                <a href="https://github.com/pasindusadishka/Inventory_Management_System" target="blank"><button>View</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- View More Button -->
+                <div id="btn-view-more">
+                    <a href="https://github.com/pasindusadishka?tab=repositories" target="blank"><button>View More</button></a>
+                </div>
+            </div>
         </section>
     </section>
+    <section id="contactMe">
+        <div class="title-div">
+            <h1>CONTACT WITH <span>ME</span></h1>
+            <h1>CONTACT WITH <span>ME</span></h1>
+          </div>
+    
+    
+        <div class="wrap">
+    
+            <div id="contact_left_cont_div">
+              <div id="digital_div">
+                <div>
+                  <p>MY DIGITAL <span> FOOTPRINTS</span></p>
+                </div>
+                <div id="social_icon_div">
+    
+                  <nav>
+                        <div class = "social-links">
+                            <ul>
+                                <li><a href="https://www.linkedin.com/in/pasindu-sadishka-a820b8211/" target="blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/pasi___sadishka/?hl=en" target="blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/pasindusadishka" target="blank"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://web.whatsapp.com/" target="blank"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+    
+                </div>
+              </div>
+    
+              <div id="bottom">
+    
+                <div class="bottom_card">
+    
+                  <div class="icon_title">
+                    <i class="fas fa-envelope"></i>
+                    <h1>Email</h1>
+                  </div>
+    
+                  <div>
+                    pasindusadishka@gmail.com
+                  </div>
+    
+                </div>
+    
+                <div class="bottom_card">
+                  <div class="icon_title">
+                    <i class="fas fa-phone-alt"></i>
+                    <i class="fas fa-wifi"></i>
+                    <h1>CALL</h1>
+                  </div>
+    
+                  <div>
+                    +94764622658
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div id="contact_right_cont_div">
+              <form>
+                <div class="name_and_no">
+                  <div class="form-row">
+                    <input type="text" id="name">
+                    <label for="name">YOUR NAME</label>
+                  </div>
+    
+                  <div class="form-row">
+                    <input type="text" id="number">
+                    <label for="number">PHONE NUMBER</label>
+                  </div>
+                </div>
+    
+    
+                <div class="form-row">
+                  <input type="text" id="email">
+                  <label for="email">EMAIL</label>
+                </div>
+    
+                <div class="form-row">
+                  <input type="text" id="subject">
+                  <label for="subject">SUBJECT</label>
+                </div>
+    
+                <div class="form-row">
+                  <textarea id="message" rows="5">
+                  </textarea>
+                  <label for="message">YOUR MESSAGE</label>
+                </div>
+              </form>
+              <div id="msg_div">
+                <button id="send_msg_btn">
+                  SEND MESSAGE
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </section>
+    
+        <div id="top" onclick="location.href='#sec-header'">
+          <i class="fas fa-arrow-up"></i>
+          <!-- <a href="#sec-header"><button></button></a> -->
+        </div>
+    </section>
 
-</main>
 
 
-<footer>
-    <nav>
-        <ul>
-            <li>
-                <a href="#home"> Home </a>
-            </li>
-
-            <li>
-                <a href="#about"> About </a>
-            </li>
-
-            <li>
-                <a href="#skill"> Skill </a>
-            </li>
-
-            <li>
-                <a href="#projects"> Projects </a>
-            </li>
-        </ul>
-
-    </nav>
-</footer>
 
 
+
+
+
+
+
+    <!-- <script src="assets/jQuery/jquery-3.6.0.min.js"></script> -->
 </body>
 </html>
